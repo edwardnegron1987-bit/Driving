@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diva & Dad: Rooftop Rumble</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <div class="fighter-card left">
+          <h2>DIVA</h2>
+          <div class="meter"><div id="p1-health" class="fill p1"></div></div>
+          <small>WASD move · F punch · G kick · H block · R star blast</small>
+        </div>
+
+        <div class="center-info">
+          <p class="title">ROOFTOP RUMBLE</p>
+          <p id="round-text">ROUND 1</p>
+          <p id="timer">60</p>
+        </div>
+
+        <div class="fighter-card right">
+          <h2>DAD</h2>
+          <div class="meter"><div id="p2-health" class="fill p2"></div></div>
+          <small>←→ move · ↑ jump · N punch · M kick · , block · / snack shot</small>
+        </div>
+      </header>
+
+      <section id="arena" class="arena">
+        <div id="p1" class="fighter p1 idle">D</div>
+        <div id="p2" class="fighter p2 idle">D</div>
+      </section>
+
+      <footer class="bottom-bar">
+        <button id="restart">Restart Match</button>
+        <p id="message">First to 2 rounds wins!</p>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
